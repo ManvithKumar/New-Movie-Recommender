@@ -36,7 +36,7 @@ def recommend(movie):
         recommended_movies_tags.append(movies.iloc[i[0]].tags[0:100])
     return recommended_movies,recommended_movies_tags
 
-st.title('Witness The Spectacular Bollywood Movies')
+st.title('Witness The Spectacular TollyWood Movies')
 selected_movies = st.selectbox(
     'Choose Your Movie',
 movies['Title'].values)
