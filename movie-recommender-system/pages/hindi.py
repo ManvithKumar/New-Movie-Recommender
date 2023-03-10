@@ -1,7 +1,6 @@
 import pandas as pd
 import streamlit as st
 import pickle
-from PIL import Image
 import random
 import requests
 
@@ -29,8 +28,6 @@ poster_list=[
 similarity =pickle.load(open('hindisimilarity.pkl','rb'))
 movies_dict = pickle.load(open('hindimovie_dict.pkl','rb'))
 movies = pd.DataFrame(movies_dict)
-
-poster = Image.open('images.jpg')
 
 
 def recommend(movie):
